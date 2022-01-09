@@ -10,7 +10,7 @@ body {
 -webkit-background-size: cover;-moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+  overflow-x: hidden;
 }
 
 a {
@@ -32,48 +32,61 @@ a {
   align-items: center;
 }
 
+
+input {
+  padding: .8em; 
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  font-size: 0.8em;
+
+  &::placeholder {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  /* none : no line is drawn, and any existing decoration is removed.
+  underline : draws a 1px line across the text at its baseline.
+  line-through : draws a 1px line across the text at its “middle” point.
+  overline : draws a 1px line across the text, directly above its “top” point. 
+  */
+}
+
 .signinbox-middle {
-  width: 25%;
-  height: 45%;
+  width: 70%;
+  min-height: 50%;
   margin: auto;
   background:#282828;
   border-radius: 1em;
   color: #ddcaca;
   text-align: center;
   padding: 1em;
-  font-size: 1.5em;
-  
-}
-input {
-padding: 0.5em; 
-border: none;
-background-color: transparent;
-outline: none;
-color: white;
-font-size: 0.8em;
+  font-size: 1.2em;
 
-
-
-/* none : no line is drawn, and any existing decoration is removed.
-underline : draws a 1px line across the text at its baseline.
-line-through : draws a 1px line across the text at its “middle” point.
-overline : draws a 1px line across the text, directly above its “top” point. 
-*/
-
-}
-::placeholder {
- color: white;
- border-bottom: 1px solid white;
+  input {
+    width: 100%;
+    font-size: 1em;
+  }
 }
 
 .signin-btn {
   background-color: transparent;
   border-radius: 2px;
   border-color: white;
-  height: 4em;
-  width: 18em;
-  margin: 1em;
+  width: 100%;
+  padding: 1em;
   cursor: pointer;
   color: white;
+  
 
+}
+
+@media only screen and (min-width: 1025px) {
+  .signinbox-middle {
+    width: 25%;
+    height: 45%;
+    padding: 1em;
+    font-size: 1.5em;
+  }
 }
