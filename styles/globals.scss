@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Noto+Sans&family=Rubik+Beastly&display=swap');
+@import './colors';
+
 html,
 body {
   padding: 0;
@@ -34,16 +36,16 @@ a {
 
 
 input {
-  padding: .8em; 
+  padding: .5em; 
   border: none;
   background-color: transparent;
   outline: none;
-  color: #ddcaca;
+  color: $textcolor;
   font-size: 0.8em;
 
   &::placeholder {
-    color: #ddcaca;
-    border-bottom: 1px solid #ddcaca;
+    color: $textcolor;
+    border-bottom: 1px solid $textcolor;
   }
 
   /* none : no line is drawn, and any existing decoration is removed.
@@ -53,18 +55,29 @@ input {
   */
 }
 
+.btn--link {
+  font-size: 0.6em;
+  text-decoration: underline;
+  color: $aura;
+  padding: 0.5em;
+}
+
 .signinbox-middle {
-  width: 70%;
+  width: 80%;
   min-height: 50%;
   margin: auto;
-  background:#282828;
+  background:$background;
   border-radius: 1em;
-  color: #ddcaca;
+  color: $textcolor;
   text-align: center;
   padding: 1em;
   font-size: 1.2em;
-  display: grid;
-  place-items: center;
+
+  .btn--link{
+    text-align: left;
+    //margin-left: 1.4em;
+    padding-left: .98em;
+  }
 
   input {
     width: 100%;
@@ -75,14 +88,15 @@ input {
 .signin-btn {
   background-color: transparent;
   border-radius: 2px;
-  border-color: #ddcaca;
+  border-color: $textcolor;
   width: 70%;
+  margin: auto;
+  border: 1px solid $textcolor;
   padding: 0.5em;
   cursor: pointer;
-  color: #ddcaca;
+  color: $textcolor;
   font-size: 1em;
-  
-
+  margin-top: 1em;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -90,8 +104,21 @@ input {
     width: 25%;
     height: 50%;
     padding: 1em;
-    font-size: 1.5em;   
+    font-size: 1.5em;
+
+    .signin-btn {
+      padding: 0.5em;
+      font-size: 1em;
+      margin-top: 0.6em;
+    }
+
+    .btn--link {
+      color: $textcolor;
+      &:hover {
+        cursor: pointer;
+        color: $aura;
+      }
+    }
   }
 }
 
-/* */
