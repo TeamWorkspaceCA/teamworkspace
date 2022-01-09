@@ -1,0 +1,79 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: url(../public/sexy-backround.svg) no-repeat center center fixed; 
+-webkit-background-size: cover;-moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+#__next {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signinbox-middle {
+  width: 25%;
+  height: 45%;
+  margin: auto;
+  background:#282828;
+  border-radius: 1em;
+  color: #ddcaca;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+  
+}
+input {
+padding: 0.5em; 
+border: none;
+background-color: transparent;
+outline: none;
+color: white;
+font-size: 0.8em;
+
+
+
+/* none : no line is drawn, and any existing decoration is removed.
+underline : draws a 1px line across the text at its baseline.
+line-through : draws a 1px line across the text at its “middle” point.
+overline : draws a 1px line across the text, directly above its “top” point. 
+*/
+
+}
+::placeholder {
+ color: white;
+ border-bottom: 1px solid white;
+}
+
+.signin-btn {
+  background-color: transparent;
+  border-radius: 2px;
+  border-color: white;
+  height: 4em;
+  width: 18em;
+  margin: 1em;
+  cursor: pointer;
+  color: white;
+
+}
