@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Noto+Sans&family=Rubik+Beastly&display=swap');
 @import './colors';
 
+
+/* Basic Settings that apply for everything */
 html,
 body {
   padding: 0;
@@ -34,6 +36,8 @@ a {
   align-items: center;
 }
 
+/* MOBILE STYLES START */
+/* <<<<< NOTE: The website will be designed for mobile first, then we will make ajustments for pc with the MEDIA QUERY BLOCK >>>>>> */
 
 input {
   padding: .5em; 
@@ -62,6 +66,14 @@ input {
   padding: 0.5em;
 }
 
+.btn--icon {
+  color: $aura;
+  padding: 1em;
+  span {
+    font-size: 0.8em;
+  }
+}
+
 .signinbox-middle {
   width: 80%;
   min-height: 50%;
@@ -75,7 +87,6 @@ input {
 
   .btn--link{
     text-align: left;
-    //margin-left: 1.4em;
     padding-left: .98em;
   }
 
@@ -83,26 +94,36 @@ input {
     width: 100%;
     font-size: 1em;
   }
+  
+  .signin-btn {
+    background-color: transparent;
+    border-color: $textcolor;
+    width: 95%;
+    margin: auto;
+    border: 1px solid $textcolor;
+    padding: 0.5em;
+    cursor: pointer;
+    color: $textcolor;
+    font-size: 1em;
+    margin-top: 1em;
+    border-radius: 7px;
+
+    &:hover {
+      color: $aura;
+      border: 1px solid $aura;
+    }
+  }
 }
 
-.signin-btn {
-  background-color: transparent;
-  border-radius: 2px;
-  border-color: $textcolor;
-  width: 70%;
-  margin: auto;
-  border: 1px solid $textcolor;
-  padding: 0.5em;
-  cursor: pointer;
-  color: $textcolor;
-  font-size: 1em;
-  margin-top: 1em;
-}
+/* MOBLIE STYLES END HERE */
 
+
+/* PC SCSS */
+/* If there is a problem for the pc styles, change it here */
 @media only screen and (min-width: 1025px) {
   .signinbox-middle {
     width: 25%;
-    height: 50%;
+    height: 60%;
     padding: 1em;
     font-size: 1.5em;
 
