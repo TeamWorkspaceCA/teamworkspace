@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Noto+Sans&family=Rubik+Beastly&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   width: 100vw;
   height: 100vh;
   background: url(../public/sexy-backround.svg) no-repeat center center fixed; 
@@ -22,6 +21,7 @@ a {
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #__next {
@@ -38,12 +38,12 @@ input {
   border: none;
   background-color: transparent;
   outline: none;
-  color: white;
+  color: #ddcaca;
   font-size: 0.8em;
 
   &::placeholder {
-    color: white;
-    border-bottom: 1px solid white;
+    color: #ddcaca;
+    border-bottom: 1px solid #ddcaca;
   }
 
   /* none : no line is drawn, and any existing decoration is removed.
@@ -63,6 +63,8 @@ input {
   text-align: center;
   padding: 1em;
   font-size: 1.2em;
+  display: grid;
+  place-items: center;
 
   input {
     width: 100%;
@@ -73,11 +75,12 @@ input {
 .signin-btn {
   background-color: transparent;
   border-radius: 2px;
-  border-color: white;
-  width: 100%;
-  padding: 1em;
+  border-color: #ddcaca;
+  width: 70%;
+  padding: 0.5em;
   cursor: pointer;
-  color: white;
+  color: #ddcaca;
+  font-size: 1em;
   
 
 }
@@ -85,7 +88,7 @@ input {
 @media only screen and (min-width: 1025px) {
   .signinbox-middle {
     width: 25%;
-    height: 45%;
+    height: 50%;
     padding: 1em;
     font-size: 1.5em;   
   }
