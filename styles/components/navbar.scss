@@ -1,0 +1,21 @@
+@import '../colors';
+
+.navbar {
+    background-color: $aura;
+    width: 100%;
+    padding: .5em;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: inline-block;
+
+
+    .navbar-btn {
+        padding: .5em;
+        color: white;
+        border-bottom: 2px solid white;
+        cursor: pointer;
+        float: left;
+        margin-right: 1em;
+    }
+}
