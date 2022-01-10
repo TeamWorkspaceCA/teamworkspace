@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import {FaGoogle, FaApple, FaMicrosoft} from 'react-icons/fa'
+import Link from 'next/link'
 
 const signin: NextPage = () => {
   return (
@@ -11,7 +11,11 @@ const signin: NextPage = () => {
             <input type="password" placeholder='Password' /> 
             <div className='btn--link'>Forgot Password?</div>
             <div className='signin-btn'>Sign In</div>
-            <div className='btn--link' style={{textAlign: 'center'}}>Don't have an account? Sign up here</div>
+            <Link href={'signup'}>
+                <div className='btn--link' style={{textAlign: 'center'}}>
+                    Don't have an account? Sign up here
+                </div>
+            </Link>  
         </form>
       </div>
     </>
