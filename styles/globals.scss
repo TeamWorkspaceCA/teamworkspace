@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Noto+Sans&family=Rubik+Beastly&display=swap');
-@import './colors';
-
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Noto+Sans&family=Rubik+Beastly&display=swap");
+@import "./colors";
 
 /* Basic Settings that apply for everything */
 html,
@@ -9,10 +8,11 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background: url(../public/sexy-backround.svg) no-repeat center center fixed; 
--webkit-background-size: cover;-moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url(../public/sexy-backround.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   overflow-x: hidden;
 }
 
@@ -25,7 +25,7 @@ a {
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 #__next {
@@ -40,7 +40,7 @@ a {
 /* <<<<< NOTE: The website will be designed for mobile first, then we will make ajustments for pc with the MEDIA QUERY BLOCK >>>>>> */
 
 input {
-  padding: .5em; 
+  padding: 0.5em;
   border: none;
   background-color: transparent;
   outline: none;
@@ -63,7 +63,7 @@ input {
   font-size: 0.6em;
   text-decoration: underline;
   color: $aura;
-  padding: 0.0em;
+  padding: 0em;
 }
 
 .btn--icon {
@@ -74,11 +74,58 @@ input {
   }
 }
 
+.signupbox-middle {
+  width: 80%;
+  min-height: 50%;
+  margin: auto;
+  background: $background;
+  border-radius: 1em;
+  color: $textcolor;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.2em;
+  form {
+    * {
+      margin: 0.2em;
+    }
+  }
+
+  .btn--link {
+    text-align: left;
+    padding-left: 0.95em;
+    margin-top: 0.5em;
+  }
+
+  input {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .signin-btn {
+    background-color: transparent;
+    border-color: $textcolor;
+    width: 95%;
+    margin: auto;
+    border: 1px solid $textcolor;
+    padding: 0.5em;
+    cursor: pointer;
+    color: $textcolor;
+    font-size: 1em;
+    margin-top: 1em;
+    border-radius: 7px;
+
+    &:hover {
+      color: $aura;
+      border: 1px solid $aura;
+    }
+  }
+}
+
 .signinbox-middle {
   width: 80%;
   min-height: 50%;
   margin: auto;
-  background:$background;
+  background: $background;
   border-radius: 1em;
   color: $textcolor;
   text-align: center;
@@ -91,9 +138,9 @@ input {
     }
   }
 
-  .btn--link{
+  .btn--link {
     text-align: left;
-    padding-left: .95em;
+    padding-left: 0.95em;
     margin-top: 0.5em;
   }
 
@@ -101,7 +148,7 @@ input {
     width: 100%;
     font-size: 1em;
   }
-  
+
   .signin-btn {
     background-color: transparent;
     border-color: $textcolor;
@@ -124,10 +171,28 @@ input {
 
 /* MOBLIE STYLES END HERE */
 
-
 /* PC SCSS */
 /* If there is a problem for the pc styles, change it here */
 @media only screen and (min-width: 1025px) {
+  .signupbox-middle {
+    width: 25%;
+    height: 60%;
+    padding: 1em;
+    font-size: 1.5em;
+    .signin-btn {
+      padding: 0.5em;
+      font-size: 1em;
+      margin-top: 1.6em;
+    }
+
+    .btn--link {
+      color: $textcolor;
+      &:hover {
+        cursor: pointer;
+        color: $aura;
+      }
+    }
+  }
   .signinbox-middle {
     width: 25%;
     height: 50%;
@@ -145,9 +210,7 @@ input {
       &:hover {
         cursor: pointer;
         color: $aura;
-        
       }
     }
   }
 }
-
