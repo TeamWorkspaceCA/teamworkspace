@@ -47,9 +47,9 @@ input {
   color: $textcolor;
   font-size: 0.8em;
 
+  border-bottom: 1px solid $textcolor;
   &::placeholder {
     color: $textcolor;
-    border-bottom: 1px solid $textcolor;
   }
 
   /* none : no line is drawn, and any existing decoration is removed.
@@ -63,7 +63,7 @@ input {
   font-size: 0.6em;
   text-decoration: underline;
   color: $aura;
-  padding: 0.5em;
+  padding: 0.0em;
 }
 
 .btn--icon {
@@ -85,9 +85,16 @@ input {
   padding: 1em;
   font-size: 1.2em;
 
+  form {
+    * {
+      margin: 0.2em;
+    }
+  }
+
   .btn--link{
     text-align: left;
-    padding-left: .98em;
+    padding-left: .95em;
+    margin-top: 0.5em;
   }
 
   input {
@@ -123,14 +130,14 @@ input {
 @media only screen and (min-width: 1025px) {
   .signinbox-middle {
     width: 25%;
-    height: 60%;
+    height: 50%;
     padding: 1em;
     font-size: 1.5em;
 
     .signin-btn {
       padding: 0.5em;
       font-size: 1em;
-      margin-top: 0.6em;
+      margin-top: 1.6em;
     }
 
     .btn--link {
@@ -138,6 +145,7 @@ input {
       &:hover {
         cursor: pointer;
         color: $aura;
+        
       }
     }
   }
