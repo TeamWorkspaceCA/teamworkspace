@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 const Home: NextPage = () => {
   return (
     <>
-      <Navbar />
+   
       <h1>Welcome to Team Work Space!</h1>
     </>
   )

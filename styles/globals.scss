@@ -67,11 +67,12 @@ input {
 }
 
 .btn--icon {
-  color: $aura;
-  padding: 1em;
-  span {
-    font-size: 0.8em;
-  }
+  color: $textcolor;
+  padding: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $aura;
 }
 
 

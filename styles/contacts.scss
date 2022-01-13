@@ -1,0 +1,20 @@
+@import './_colors';
+
+.contact-btns {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    gap: 1em;
+
+    .btn--icon {
+        float: left;
+        padding: .8em;
+        margin: 0;
+        font-size: 1em;
+        border-radius: .5em;
+    }
+}

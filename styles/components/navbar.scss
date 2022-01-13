@@ -8,14 +8,59 @@
     top: 0%;
     left: 0%;
     display: inline-block;
+}
+.navbar-btn {
+    padding: .5em;
+    color: white;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    float: left;
+    margin-right: 1em;
+}
 
+.navbar-menu {
+    position: absolute;
+    width: 100vw;
+    height: 95%;
+    
+    background: $aura;
+    top: 5%;
+    left: -100%;
+
+    .navbar-items {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        width: 100%;
+    }
 
     .navbar-btn {
-        padding: .5em;
-        color: white;
-        border-bottom: 2px solid white;
-        cursor: pointer;
-        float: left;
-        margin-right: 1em;
+        float: none;
+        width: 80%;
+        border: 3px solid white;
+        margin: auto;
+        text-align: center;
+        margin-top: 2.5em;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -100%;
     }
 }
