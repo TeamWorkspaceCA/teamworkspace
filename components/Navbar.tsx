@@ -18,7 +18,7 @@ const Navbar = () => {
         {text: 'Sign In', float: 'right', href:"/signin"},
         {text: 'Sign Up', float: 'right', href:"/signup"},
         {text: 'Contact Us', float: 'right', href:"/contact"},
-        {text: 'Packages', float: 'left', href:"/packages"}
+        {text: 'Prices', float: 'left', href:"/pricing"}
     ])
 
     let [navbarOpenState, setNavbarOpenState] = useState<boolean>(true);
@@ -92,10 +92,3 @@ const NavbarButton:FC<NavbarLink> = ({text, float, href, ChangeNavbarMenu}) => {
         </div>
     </Link>;
 }
-
-/* 
-    <div className='navbar-btn' style={{float: "right"}}>Sign In</div>
-    <div className='navbar-btn' style={{float: "right"}}>Sign Up</div>
-    <div className='navbar-btn' style={{float: "right"}}>Contact Us</div>
-    <div className='navbar-btn'>Packages</div>
-*/
