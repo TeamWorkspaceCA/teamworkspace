@@ -59,6 +59,10 @@ input {
   */
 }
 
+.heading {
+  color: $textcolor;
+}
+
 .btn--link {
   font-size: 0.6em;
   text-decoration: underline;
@@ -68,13 +72,12 @@ input {
 
 .btn--icon {
   color: $textcolor;
-  padding: .5em;
+  padding: 0.5em;
   display: flex;
   align-items: center;
   justify-content: center;
   background: $aura;
 }
-
 
 .signupbox-middle {
   width: 80%;
@@ -168,7 +171,6 @@ input {
       color: $aura;
       border: 1px solid $aura;
     }
-
   }
 }
 
