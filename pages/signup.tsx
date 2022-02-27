@@ -7,6 +7,7 @@ const signup: NextPage = () => {
       <div className="signupbox-middle">
         <h1>Sign Up</h1>
         <form style={{ padding: "1.5em" }}>
+
           <input type="text" placeholder="Full Name" />
           <input type="email" placeholder="Email" />
           <input type="text" placeholder="Username" />
