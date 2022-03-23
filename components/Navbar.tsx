@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <Link href={"/"}>
+        <Link href={"/"} passHref = {true}>
           <div
             className="navbar-btn"
             style={{ float: deviceSize == "pc" ? "left" : "right" }}
@@ -67,6 +67,7 @@ const Navbar = () => {
                 text={x.text}
                 float={x.float}
                 href={x.href}
+                key={x.href}
               />
             ))}
           </>
@@ -112,7 +113,7 @@ const NavbarButton: FC<NavbarLink> = ({
   ChangeNavbarMenu,
 }) => {
   return (
-    <Link href={href}>
+    <Link href={href} passHref = {true}>
       <div
         key={text}
         onClick={ChangeNavbarMenu}

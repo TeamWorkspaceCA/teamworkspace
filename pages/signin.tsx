@@ -11,9 +11,9 @@ const signin: NextPage = () => {
             <input type="password" placeholder='Password' /> 
             <div className='btn--link'>Forgot Password?</div>
             <div className='signin-btn'>Sign In</div>
-            <Link href={'signup'}>
+            <Link href={'signup'} passHref>
                 <div className='btn--link' style={{textAlign: 'center'}}>
-                    Don't have an account? Sign up here
+                    Don&apos;t have an account? Sign up here
                 </div>
             </Link>  
         </form>

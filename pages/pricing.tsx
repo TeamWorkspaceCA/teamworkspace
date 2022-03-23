@@ -10,10 +10,10 @@ const pricing: NextPage = () => {
         <div className='signinbox-middle'>
             <h1>There is our package:</h1>
             <ol>
-                <li></li>
+                <li>yes</li>
             </ol>
         </div>
-        </>
+        </> 
     )
 }
 

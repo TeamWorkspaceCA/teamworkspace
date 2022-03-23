@@ -10,7 +10,7 @@ const contact: NextPage = () => {
             <h1>Contact Us</h1>
             <h4 style={{marginTop:'1em'}}>Choose one of these options</h4>
             <div className="contact-btns">
-                <a href='https://discord.gg/3JxeAWfQ9T' target="_blank">
+                <a href='https://discord.gg/3JxeAWfQ9T' target="_blank" rel="noopener noreferrer">
                     <div className="btn--icon">
                         <FaDiscord /> Discord
                     </div>

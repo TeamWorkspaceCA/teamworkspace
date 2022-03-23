@@ -13,7 +13,7 @@ const signup: NextPage = () => {
           <input type="text" placeholder="Username" />
           <input type="password" placeholder="Password" />
           <div className="signin-btn">Sign Up</div>
-          <Link href={"signin"}>
+          <Link href={"signin"} passHref>
             <div className="btn--link" style={{ textAlign: "center" }}>
               Already have an account? Sign in here
             </div>
